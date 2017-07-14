@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
   background-image: url("img/coffe.jpg");
+=======
+  background-image: url(img/coffe.jpg);
+>>>>>>> fd22d97feb95b83e49a399a85eb45d52ca9055c7
   background-size: 100%;
 }
 *{
