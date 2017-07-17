@@ -81,15 +81,17 @@ h1, #pixels{
 
 #intro{
 	background:url(images/firstBG.jpg) 60% 0 no-repeat fixed;
-	color: white;
-	height: 800px;
-	margin: 0 auto;
+	background-size: cover;
+	color: black;
+	height:900px;
+	margin: 0;
 	padding: 10px;
 
 }
 
 #second{
 	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	background-size: cover;
 	color: white;
 	height: 1300px;
 	margin: 0 auto;
@@ -101,12 +103,14 @@ h1, #pixels{
 	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 700px;
+	background-size: cover;
 }
 
 .story{
 	padding:70px;
 	margin-left:200px;
 	margin-top:50px;
+	width: 100%;
 
 
 }
@@ -125,23 +129,24 @@ h1, #pixels{
 	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
 	}
 
+
 .halaman_atas p,h2{
- text-align: justify;
+ text-align: center;
  padding : 20px;
  letter-spacing: 1.5px;
- margin-left:390px;
- width: 80%;
+ margin-left:580px;
+ width: 100%;
 
 
 l}
 .halaman_atas img{
-	border-radius: 50%;
-	margin:20px auto 20px 40px;
-	height: 250px;
-	width: 250px;
+	border-radius: 100%;
+	padding-top:20px;
+	height: 300px;
+	width: 300px;
 	display: block;
-	margin-left: 430px;
-
+	margin-top:20px;
+	margin-left:630px;
 
 }
 .story {
@@ -157,27 +162,35 @@ l}
 		margin: 20px auto;
 		border: 1px solid #bbb;
 		float:left;
-
 }
 
 .contact{
 padding:10px;
-margin-left: 510px;
-
+height: 300px;
+width: 100%;
 }
 
 
 .contact h1{
-	color: black;
+	color: white;
 	text-align: center;
-	margin-right:570px;
 	margin-top: 100px;
+	width: 97%;
 }
 
 .contact img{
-	width: 150px;
-	padding:2px;
-	bottom:0px;
+	width: 100px;
+	margin-left:900px;
+	float:left;
+}
+
+.contact a{
+	padding:3px;
+	margin-left: 250px;
+}
+
+.medsos{
+
 }
 
 footer{
