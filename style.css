@@ -230,7 +230,8 @@ h1, #pixels{
 
 .contact img{
 width: 150px;
-padding:3px;
+padding:0px;
+margin-right: 2px;
 }
 
 .gabungan{
