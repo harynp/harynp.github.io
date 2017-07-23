@@ -78,6 +78,7 @@
                 else if (tekan == "down") ny++;
 				var nilai_text = nilai;
                 ruang.fillText(nilai_text, 5, tinggi - 5);
+                
                 //memeriksa tabrakan
                 if (
                   nx == -1 ||
@@ -88,10 +89,10 @@
                   ){
 
                 //restart game
-			alert('GAME OVER, Nilai Kamu Terakhir kamu adakah '+nilai_text);
-            init();
-            return;
-            }
+				alert('GAME OVER, Nilai Kamu Terakhir kamu adakah '+nilai_text);
+            	init();
+            	return;
+            	}
 
                 //cek jika ular kena makanan/memakan makanan
                 if(nx == makanan.x && ny == makanan.y){
@@ -118,7 +119,7 @@
               paint_cell(makanan.x, makanan.y);
  
                 //membuat penilaian skor
-               var nilai_text = "nilai: " + nilai;
+               var nilai_text = "SCORE KAMU ADALAH : " + nilai;
                 ruang.fillText(nilai_text, 5, tinggi - 5);
             }
 
