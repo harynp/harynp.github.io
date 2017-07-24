@@ -1,18 +1,18 @@
 <html>
     <head>
-
+		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <title>Membuat Game Snake Dengan HTML5 dan JQuery</title>
+        <title>GAME SNAKE SEDERHANA</title>
 
     </head>
 
     <body>
 
-
-        <canvas id="ruang" width="500" height="500"></canvas>
-
-
-        <script type="text/javascript">
+		
+        <canvas id="ruang" width="1550px" height="700px"></canvas>
+		
+		<h3 align="center"> GAME SNAKE GIGIT KOTAK</h3>
+	    <script type="text/javascript">
             $(document).ready(function() {
 
               // deklarasi
@@ -21,7 +21,7 @@
               var lebar = $("#ruang").width();
               var tinggi = $("#ruang").height();
 
-              var cw = 10;
+              var cw = 20;
               var tekan ;
               var makanan;
               var nilai;
@@ -62,11 +62,11 @@
             }
 
               //pengaturan
-              function paint() {
+				function paint() {
                 // warna background
-                ruang.fillStyle = "#ecf0f1";
+                ruang.fillStyle = "#66FF33";
                 ruang.fillRect(0, 0, lebar, tinggi);
-                ruang.strokeStyle = "#2c3e50";
+                ruang.strokeStyle = "#66FF33";
                 ruang.strokeRect(0, 0, lebar, tinggi);
 
                 //membuat pergerakan untuk ular
@@ -76,7 +76,7 @@
                 else if (tekan == "left") nx--;
                 else if (tekan == "up") ny--;
                 else if (tekan == "down") ny++;
-				var nilai_text = nilai;
+				        var nilai_text = nilai;
                 ruang.fillText(nilai_text, 5, tinggi - 5);
                 
                 //memeriksa tabrakan
@@ -119,14 +119,14 @@
               paint_cell(makanan.x, makanan.y);
  
                 //membuat penilaian skor
-               var nilai_text = "SCORE KAMU ADALAH : " + nilai;
-                ruang.fillText(nilai_text, 5, tinggi - 5);
+               var nilai_text = "SCORE KAMU SEMENTARA ADALAH : " + nilai;
+			   ruang.fillText(nilai_text, 5, tinggi - 5);
             }
 
             function paint_cell(x, y) {
                 ruang.fillStyle = "#1abc9c";
                 ruang.fillRect(x * cw, y * cw, cw, cw);
-                ruang.strokeStyle = "#ecf0f1";
+                ruang.strokeStyle = "882D61 ";
                 ruang.strokeRect(x * cw, y * cw, cw, cw);
             }
 
